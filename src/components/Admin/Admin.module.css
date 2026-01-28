@@ -1,0 +1,122 @@
+.Admin{
+    flex: 0.8;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 40px 50px;
+    background-color: #f4f6fa;   
+    box-sizing: border-box;
+}
+
+/* Grid layout */
+.AdminBlock{
+    width: 100%;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Individual Card */
+.AdminCard{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 22px;
+    box-sizing: border-box;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: all 0.25s ease;
+    border: 1px solid #e5e7eb;
+}
+
+/* Hover effect */
+.AdminCard:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Percentage / score text */
+.AdminCard .cardPercentage,
+.AdminCard .adminPercentage{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+/* Label below percentage */
+.AdminCard .cardPercentage::after,
+.AdminCard .adminPercentage::after{
+    content: "Feedback Score";
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* Feedback / text content */
+.AdminCard p,
+.AdminCard .feedback,
+.AdminCard .adminFeedback{
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+/* Headings inside card */
+.AdminCard h3,
+.AdminCard h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px){
+    .AdminBlock{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 780px){
+    .Admin{
+        padding: 30px 20px;
+    }
+
+    .AdminBlock{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
